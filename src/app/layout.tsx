@@ -1,4 +1,4 @@
-import Header from "@/component/header";
+import Header from "@/app/component/header";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -30,6 +30,7 @@ export default function RootLayout({
       >
         <Header></Header>
         {children}
+        
       </body>
     </html>
   );
