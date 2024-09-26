@@ -83,17 +83,17 @@ function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
 
 function DesktopNavLinks() {
   return (
-    <ul className="flex flex-row space-x-20 koho-semibold w-auto border border-blue-600 text-xl rounded-xl px-6 py-2">
-      <li className="hover:underline hover:underline-sky-400 hover:text-sky-300 hover:underline-offset-8 transition-colors duration-500 p-2">
+    <ul className="flex flex-row space-x-20 koho-semibold w-auto border border-blue-600 bg-inherit backdrop-blur-sm text-xl rounded-xl px-6 py-2">
+      <li className="hover:underline hover:underline-sky-400 hover:text-blue-400 hover:underline-offset-8 transition-colors duration-500 p-2">
         <Link href="/">Home</Link>
       </li>
-      <li className="hover:underline hover:underline-sky-400 hover:text-sky-300 hover:underline-offset-8 transition-colors duration-500 p-2">
+      <li className="hover:underline hover:underline-blue-400 hover:text-blue-400 hover:underline-offset-8 transition-colors duration-500 p-2">
         <Link href="/about">About</Link>
       </li>
-      <li className="hover:underline hover:underline-sky-400 hover:text-sky-300 hover:underline-offset-8 transition-colors duration-500 p-2">
+      <li className="hover:underline hover:underline-blue-400 hover:text-blue-400 hover:underline-offset-8 transition-colors duration-500 p-2">
         <Link href="/project">Project</Link>
       </li>
-      <li className="hover:underline hover:underline-sky-400 hover:text-sky-300 hover:underline-offset-8 transition-colors duration-500 p-2">
+      <li className="hover:underline hover:underline-blue-400 hover:text-blue-400 hover:underline-offset-8 transition-colors duration-500 p-2">
         <Link href="/contact">Contact</Link>
       </li>
     </ul>

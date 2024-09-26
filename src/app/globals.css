@@ -102,3 +102,28 @@ body {
   text-decoration: underline;
   text-decoration-color: #4299e1;
 }
+
+.underline-blue-500{
+  text-decoration: underline;
+  text-decoration-color: #2b6cb0;
+}
+.underline-blue-600{
+  text-decoration: underline;
+  text-decoration-color: #2c5282;
+}
+.underline-blue-700{
+  text-decoration: underline;
+  text-decoration-color: #2a4365;
+}
+.underline-blue-800{
+  text-decoration: underline;
+  text-decoration-color: #1a365d;
+}
+.underline-blue-900{
+  text-decoration: underline;
+  text-decoration-color: #153e75;
+}
+.underline-blue-400{
+  text-decoration: underline;
+  text-decoration-color: #4299e1;
+}
