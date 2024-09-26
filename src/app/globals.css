@@ -97,3 +97,8 @@ body {
   font-weight: 700;
   font-style: italic;
 }
+
+.underline-sky-500{
+  text-decoration: underline;
+  text-decoration-color: #4299e1;
+}
