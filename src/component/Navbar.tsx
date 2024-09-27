@@ -54,7 +54,7 @@ function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
 
       {/* Hamburger Navbar */}
       <div
-        className={`relative px-4 bg-blue-400 bg-opacity-50 w-5/12 max-w-xs h-screen rounded-md my-10 transition-transform duration-300 transform ${
+        className={`relative px-4 bg-blue-600 bg-opacity-100 w-5/12 max-w-xs h-screen rounded-md my-10 transition-transform duration-300 transform ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -83,7 +83,7 @@ function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
 
 function DesktopNavLinks() {
   return (
-    <ul className="flex flex-row space-x-20 koho-semibold w-auto border border-blue-600 bg-inherit backdrop-blur-sm text-xl rounded-xl px-6 py-2">
+    <ul className="flex flex-row space-x-20 koho-semibold w-auto ring ring-blue-600 bg-inherit backdrop-blur-sm text-xl rounded-xl px-6 ">
       <li className="hover:underline hover:underline-sky-400 hover:text-blue-400 hover:underline-offset-8 transition-colors duration-500 p-2">
         <Link href="/">Home</Link>
       </li>
