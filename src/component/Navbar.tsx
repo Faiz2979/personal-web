@@ -1,101 +1,74 @@
 "use client";
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link';
-import { useState } from 'react';
+import Link from "next/link";
+import { ReactNode, useEffect, useState } from "react";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
+
+interface Socials {
+  label: ReactNode;
+  href: string;
+}
+
+const socials: Socials[] = [
+  {
+    label: (
+      <FaGithub className="text-white group-hover:text-black duration-300 transition-all" />
+    ),
+    href: "https://github.com/Faiz2979",
+  },
+  {
+    label: (
+      <FaLinkedin className="text-white group-hover:text-black duration-300 transition-all" />
+    ),
+    href: "https://linkedin.com/in/faizannabil",
+  },
+  {
+    label: (
+      <FaInstagram className="text-white group-hover:text-black duration-300 transition-all" />
+    ),
+    href: "https://instagram.com/wisefaiz",
+  },
+];
 
 export default function Navbar() {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
-  const handleDrawerToggle = () => {
-    setIsDrawerOpen(!isDrawerOpen);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <>
-      {/* Navbar for Desktop */}
-      <div className="hidden sm:flex relative pt-10 flex-col justify-center w-full ">
-        <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4">
-          <DesktopNavLinks />
-        </div>
-      </div>
-
-      {/* Navbar for Mobile */}
-      <div className="sm:hidden relative flex justify-between w-full my-4 px-4">
-        <MobileDrawer isOpen={isDrawerOpen} onClose={handleDrawerToggle} />
-      </div>
-    </>
-  );
-}
-
-interface MobileDrawerProps {
-  isOpen: boolean;
-  onClose: () => void;
-}
-
-function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
-  return (
-    <div className="fixed inset-0 flex justify-end">
-      <button
-        className={`absolute top-4 right-4 p-2 transition-opacity duration-200 ${
-          isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
-        }`}
-        onClick={onClose}
+    <nav
+      className={`px-[30px] lg:px-[100px] py-[5px] flex items-center justify-between h-[70px] transition-all fixed w-full duration-300 z-[999] overflow-hidden`}
+    >
+      <Link
+        href={"/"}
+        className="text-white z-10 text-4xl font-semibold leading-none inline-flex items-end gap-[2px]"
       >
-        <FontAwesomeIcon className="text-4xl" icon={faBars} />
-      </button>
-      {/* Menutup Navbar Hamburger */}
+        {/* Faiz <span className="w-3 h-3 rounded-full bg-[#201cf8]"></span> */}
+      </Link>
+      <div className="flex z-10 items-center gap-3">
+        {socials.map((social) => (
+          <Link
+            href={social.href}
+            key={social.href}
+            target="_blank"
+            className="p-2 rounded-full flex items-center justify-center border border-white bg-transparent transition-all outline-1 duration-300 group hover:bg-white"
+          >
+            {social.label}
+          </Link>
+        ))}
+      </div>
       <div
-        className={`fixed inset-0 bg-black bg-opacity-30 transition-opacity duration-300 ${
-          isOpen ? 'opacity-50' : 'opacity-0 pointer-events-none'
-        }`}
-        onClick={onClose}
+        className={`absolute w-full h-full left-0 top-0 z-0 transition-all duration-300 ${scrollY > 100? "bg-[#b9cefc] bg-opacity-20 backdrop-blur-sm": "bg-transparent"}`}
       ></div>
-
-      {/* Hamburger Navbar */}
-      <div
-        className={`relative px-4 bg-blue-600 bg-opacity-100 w-5/12 max-w-xs h-screen rounded-md my-10 transition-transform duration-300 transform ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
-      >
-        <div>
-          <ul className="flex flex-col justify-center text-center items-center space-y-4 mt-10 koho-regular">
-            <li className="text-2xl p-2 w-full">
-              <Link href="#Hero">Home</Link>
-            </li>
-            <li className="text-2xl p-2 w-full">
-              <Link href="#About">About</Link>
-            </li>
-            <li className="text-2xl p-2 w-full">
-              <Link href="/project">Project</Link>
-            </li>
-            <li className="text-2xl p-2 w-full">
-              <Link href="/contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-
-
-function DesktopNavLinks() {
-  return (
-    <ul className="flex flex-row space-x-20 koho-semibold w-auto ring ring-blue-600 bg-inherit backdrop-blur-sm text-xl rounded-xl px-6 ">
-      <li className="hover:underline hover:underline-sky-400 hover:text-blue-400 hover:underline-offset-8 transition-colors duration-500 p-2">
-        <Link href="/">Home</Link>
-      </li>
-      <li className="hover:underline hover:underline-blue-400 hover:text-blue-400 hover:underline-offset-8 transition-colors duration-500 p-2">
-        <Link href="/about">About</Link>
-      </li>
-      <li className="hover:underline hover:underline-blue-400 hover:text-blue-400 hover:underline-offset-8 transition-colors duration-500 p-2">
-        <Link href="/project">Project</Link>
-      </li>
-      <li className="hover:underline hover:underline-blue-400 hover:text-blue-400 hover:underline-offset-8 transition-colors duration-500 p-2">
-        <Link href="/contact">Contact</Link>
-      </li>
-    </ul>
+    </nav>
   );
 }
