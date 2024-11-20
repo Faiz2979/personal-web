@@ -1,6 +1,6 @@
-import Navbar from "@/component/Navbar";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import './custom.css';
 import "./globals.css";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Faiz's Personal Website",
+  title: "Faiz's Website",
   description: "Welcome to my personal website, where I share my experiences.",
 };
 
@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
         {children}
         
       </body>

@@ -61,10 +61,10 @@ function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
         <div>
           <ul className="flex flex-col justify-center text-center items-center space-y-4 mt-10 koho-regular">
             <li className="text-2xl p-2 w-full">
-              <Link href="/">Home</Link>
+              <Link href="#Hero">Home</Link>
             </li>
             <li className="text-2xl p-2 w-full">
-              <Link href="/about">About</Link>
+              <Link href="#About">About</Link>
             </li>
             <li className="text-2xl p-2 w-full">
               <Link href="/project">Project</Link>
