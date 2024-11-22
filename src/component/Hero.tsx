@@ -16,11 +16,12 @@ export default function Hero() {
   }, []);
   return (
     <Section
-      id="hero"
-      className="relative h-[100vh] flex justify-center items-center overflow-hidden py-[72px] bg-[#02050e]"
-      data-aos="">
+    id="hero"
+    className="relative h-[100vh] flex justify-center items-center overflow-hidden py-[72px] bg-[#02050e]"
+    >
       <div className="flex flex-col md:flex-row items-center md:gap-48 sm:gap-32 gap-8">
-        <div className="flex justify-center items-center">
+
+        <div className="flex justify-center items-center" data-aos="flip-up">
           <Image
             src={"/assets/sementara.jpg"}
             alt="myProfilePicture"
@@ -40,6 +41,7 @@ export default function Hero() {
           </h3>
         </div>
       </div>
+
     </Section>
   );
 }
