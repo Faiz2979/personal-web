@@ -17,6 +17,11 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Faiz's Website",
   description: "Welcome to my personal website, where I share my experiences.",
+  // icons: {
+  //   icon: "/assets/icon.png", // Path ke favicon di folder public
+  //   shortcut: "/assets/icon.png", // Shortcut icon
+  //   apple: "/assets/icon.png", // Untuk perangkat Apple
+  // }
 };
 
 export default function RootLayout({
