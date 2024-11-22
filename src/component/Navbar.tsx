@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { ReactNode, useEffect, useState } from "react";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaInstagram, FaItchIo, FaLinkedin } from "react-icons/fa6";
 
 interface Socials {
   label: ReactNode;
@@ -26,6 +26,12 @@ const socials: Socials[] = [
       <FaInstagram className="text-white group-hover:text-black duration-300 transition-all" />
     ),
     href: "https://instagram.com/wisefaiz",
+  },
+  {
+    label: (
+      <FaItchIo className="text-white group-hover:text-black duration-300 transition-all" />
+    ),
+    href: "https://flamexq.itch.io/",
   },
 ];
 
