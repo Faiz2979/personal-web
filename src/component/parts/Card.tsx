@@ -36,7 +36,7 @@ import React, { ReactNode } from "react";
                 </h3>
             </div>
             <Image
-                src={"/projects/" + props.image}
+                src={"/certificate/" + props.image}
                 className="w-full h-full object-cover group-hover:scale-110 duration-300 transition-all -z-40 absolute left-0 top-0"
                 alt="waw"
                 unoptimized
