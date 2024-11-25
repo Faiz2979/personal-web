@@ -60,7 +60,7 @@ import CertCard from "./parts/Card";
                 index === 1
                 ? "bg-white text-[#1f44c5]"
                 : "bg-transparent  text-white]"
-            } hover:bg-primary hover:text-white transition-all duration-300`}
+            } hover:bg-[#1f44c5] hover:text-white transition-all duration-300`}
             >
             Language
             </button>
