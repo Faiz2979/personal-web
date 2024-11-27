@@ -1,26 +1,18 @@
-"use client"
+"use client";
 import Image from "next/image";
-import { useEffect } from "react";
+import Typewriter from "typewriter-effect";
 import Section from "../global/Wrapper";
-var Typewriter = require("typewriter-effect/dist/core");
+import { useTypewriterStrings } from "./parts/Typewriter";
 
 export default function Hero() {
-  useEffect(() => {
-    const typewriterStrings = ["Web Developer", "Game Developer", "ℵ"];
-    typewriterStrings.sort(() => Math.random() - 1);
-    new Typewriter("#title", {
-      strings: typewriterStrings,
-      autoStart: true,
-      loop: true,
-    });
-  }, []);
+  const strings = useTypewriterStrings(); // Ambil strings dari context
+
   return (
     <Section
-    id="hero"
-    className="relative h-[100vh] flex justify-center items-center overflow-hidden py-[72px] bg-[#02050e]"
+      id="hero"
+      className="relative h-[100vh] flex justify-center items-center overflow-hidden py-[72px] bg-[#02050e]"
     >
       <div className="flex flex-col md:flex-row items-center md:gap-48 sm:gap-32 gap-8">
-
         <div className="flex justify-center items-center" data-aos="flip-up">
           <Image
             src={"/assets/sementara.jpg"}
@@ -34,14 +26,13 @@ export default function Hero() {
         <div className="text-white z-30 oxanium text-left">
           <h2 className="oxanium-semibold text-3xl sm:text-4xl md:text-8xl">
             Hello Guys!
-            <br /> I'm Faiz
+            <br /> I&#39;m Faiz
           </h2>
-          <h3 className="text-4xl sm:text-4xl md:text-6xl oxanium-bold">
-            A <span id="title" className="text-[#3864e8] inline-block min-w-[200px]"></span>
-          </h3>
+            <h3 className="text-4xl sm:text-4xl md:text-8xl oxanium-bold">
+            A <span className="text-[#3864e8] inline-block min-w-[200px]"><Typewriter options={{ strings, autoStart: true, loop: true, wrapperClassName: "inline-block" }} /></span>
+            </h3>
         </div>
       </div>
-
     </Section>
   );
 }

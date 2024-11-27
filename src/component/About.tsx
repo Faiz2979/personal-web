@@ -2,28 +2,34 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import Typewriter from "typewriter-effect";
 import Section from "../global/Wrapper";
-var Typewriter = require("typewriter-effect/dist/core");
+import { useTypewriterStrings } from "./parts/Typewriter";
+
 export default function About() {
   useEffect(() => {
     AOS.init();
   }, []);
-  useEffect(() => {
-    new Typewriter("#title1", {
-      strings: ["Web Developer", "Game Developer","ℵ"],
-      autoStart: true,
-      loop: true,
-    });
-  }, []);
+
+  // Call useTypewriterStrings at the top level
+  const strings = useTypewriterStrings();
 
   return (
     <Section id="about" className=" bg-[#1f44c5] flex py-[120px]" >
       <div className="flex md:items-center items-start justify-center gap-10 md:gap-0 md:justify-between flex-col md:flex-row" data-aos="fade-right">
         <div className="w-[70%]">
-            <h1 className="text-secondary oxanium-bold text-3xl md:text-6xl w-full">
+          <h1 className="text-secondary oxanium-bold text-3xl md:text-6xl w-full">
             A Passionate
             <br />
-            <span className="oxanium oxanium-bold whitespace-nowrap" id="title1"></span>
+            <span className="oxanium oxanium-bold whitespace-nowrap" >
+              <Typewriter
+                options={{
+                  strings: strings,  // Use strings here
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </span>
           </h1>
         </div>
         <div className="w-[85%] md:w-1/2">
