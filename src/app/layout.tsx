@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Faiz's Website",
+  title: "Muhammad Faiz Annabil",
   description: "Welcome to my personal website, where I share my experiences.",
   // icons: {
   //   icon: "/assets/icon.png", // Path ke favicon di folder public
