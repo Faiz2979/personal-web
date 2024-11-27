@@ -32,7 +32,9 @@ import Section from "../global/Wrapper";
 
                 <div className="flex gap-5 lg:gap-7 text-3xl md:text-5xl text-white flex-wrap items-center justify-center">
                     {skills.map((skill, i) => (
-                        <React.Fragment key={i}>{skill}</React.Fragment>
+                    <React.Fragment key={i}>
+                        {skill}
+                    </React.Fragment>
                     ))}
                 </div>
             </div>
