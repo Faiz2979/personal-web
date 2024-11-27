@@ -70,8 +70,8 @@ import CertCard from "./parts/Card";
             index === 1 ? "flex" : "hidden"
             }`}
         >
-            {certs.lang.map((cert) => (
-            <CertCard {...cert} />
+            {certs.lang.map((cert, index) => (
+            <CertCard key={index} {...cert} />
             ))}
         </div>
         <div
@@ -80,7 +80,7 @@ import CertCard from "./parts/Card";
             }`}
         >
             {certs.comp.map((cert) => (
-            <CertCard {...cert} />
+            <CertCard key={index} {...cert} />
             ))}
         </div>
         </Section>

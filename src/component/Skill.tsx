@@ -12,14 +12,13 @@ import {
 import Section from "../global/Wrapper";
 
     const skills = [
-    <SiUnity />,
-    <RiNextjsFill />,
-    <SiNodemon />,
-    <SiReact />,
-    <SiTypescript />,
-    // <SiPrisma />,
-    <SiMysql />,
-    <SiExpress />,
+    <SiUnity key="unity" />,
+    <RiNextjsFill key="nextjs" />,
+    <SiNodemon key="nodemon" />,
+    <SiReact key="react" />,
+    <SiTypescript key="typescript" />,
+    <SiMysql key="mysql" />,
+    <SiExpress key="express" />,
     ];
 
     export default function Skills() {

@@ -9,8 +9,8 @@ const projects = [
         image: "personal-website.png", // Sesuaikan dengan nama file
         href: "#",
         stack: [
-            <RiNextjsFill />,
-            <SiTypescript />,
+            <RiNextjsFill key="nextjs" />,
+            <SiTypescript key="typescript" />,
         ],
     },
 ];
@@ -22,8 +22,8 @@ const projects = [
             Featured Projects
         </h1>
         <div className="w-full flex flex-wrap gap-4 items-center justify-center " data-aos="fade-up">
-            {projects.map((project) => (
-            <ProjectCard key={project.name} {...project} />
+            {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
             ))}
         </div>
         </Section>

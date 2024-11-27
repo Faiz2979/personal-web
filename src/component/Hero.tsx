@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="text-white z-30 oxanium text-left">
           <h2 className="oxanium-semibold text-3xl sm:text-4xl md:text-8xl">
             Hello Guys!
-            <br /> I&#39;m Faiz
+            <br /> I am Faiz
           </h2>
             <h3 className="text-4xl sm:text-4xl md:text-8xl oxanium-bold">
             A <span className="text-[#3864e8] inline-block min-w-[200px]"><Typewriter options={{ strings, autoStart: true, loop: true, wrapperClassName: "inline-block" }} /></span>
