@@ -1,5 +1,6 @@
 import About from '@/component/About';
 import Certificate from '@/component/Certificate';
+import Footer from '@/component/Footer';
 import Hero from '@/component/Hero';
 import Project from '@/component/Project';
 import Skills from '@/component/Skill';
@@ -15,6 +16,7 @@ export default function Home() {
         <Project></Project>
         <Skills></Skills>
         <Certificate></Certificate>
+        <Footer></Footer>
       </TypewriterProvider>
       </div>
   );

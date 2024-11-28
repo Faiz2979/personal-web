@@ -23,15 +23,15 @@ const socials: Socials[] = [
   },
   {
     label: (
-      <FaInstagram className="text-white group-hover:text-black duration-300 transition-all" />
-    ),
-    href: "https://instagram.com/wisefaiz",
-  },
-  {
-    label: (
       <FaItchIo className="text-white group-hover:text-black duration-300 transition-all" />
     ),
     href: "https://flamexq.itch.io/",
+  },
+  {
+    label: (
+      <FaInstagram className="text-white group-hover:text-black duration-300 transition-all" />
+    ),
+    href: "https://instagram.com/wisefaiz",
   },
 ];
 

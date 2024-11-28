@@ -28,7 +28,7 @@ export default function Hero() {
             Hello Guys!
             <br /> I am Faiz
           </h2>
-            <h3 className="text-4xl sm:text-4xl md:text-8xl oxanium-bold">
+            <h3 className="text-3xl sm:text-3xl md:text-8xl oxanium-bold">
             A <span className="text-[#3864e8] inline-block min-w-[200px]"><Typewriter options={{ strings, autoStart: true, loop: true, wrapperClassName: "inline-block" }} /></span>
             </h3>
         </div>
