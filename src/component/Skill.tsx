@@ -5,9 +5,11 @@ import {
     SiExpress,
     SiMysql,
     SiNodemon,
+    SiPrisma,
     SiReact,
+    SiSequelize,
     SiTypescript,
-    SiUnity
+    SiUnity,
 } from "react-icons/si";
 import Section from "../global/Wrapper";
 
@@ -19,6 +21,8 @@ import Section from "../global/Wrapper";
     <SiTypescript key="typescript" />,
     <SiMysql key="mysql" />,
     <SiExpress key="express" />,
+    <SiPrisma key="prisma" />,
+    <SiSequelize key="sequelize"/>,
     ];
 
     export default function Skills() {
