@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between w-full h-auto p-10">
             <div className="oxanium oxanium-semibold text-center md:text-left mb-6 md:mb-0">
                 <h1 className="text-sm md:text-md lg:text-4xl">Contact me at faizannabil877@gmail.com</h1>
-                <p className="text-xs md:text-md">© 2021 Muhammad Faiz Annabil</p>
+                <p className="text-xs md:text-md">© 2024 Muhammad Faiz Annabil</p>
             </div>
             <div id="iconButton" className="flex flex-row md:flex-col lg:flex-row gap-2 md:gap-6">
                 <a

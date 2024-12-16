@@ -13,6 +13,16 @@ const projects = [
             <SiTypescript key="typescript" />,
         ],
     },
+    {
+        name: "Movie App",
+        image: "movie-app.png", // Sesuaikan dengan nama file
+        href: "#",
+        stack: [
+            <RiNextjsFill key="nextjs" />,
+            <SiTypescript key="typescript" />,
+            // <SiThemoviedatabase key="tmdb" />,
+        ],
+    }
 ];
 
     export default function Projects() {
