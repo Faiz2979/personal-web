@@ -27,7 +27,7 @@ const projects = [
 
     export default function Projects() {
     return (
-        <Section id="projects" className="flex flex-col items-center gap-10 oxanium-regular ">
+        <Section id="projects" className="flex flex-col items-center gap-10 oxanium-regular bg-[#02050e] ">
         <h1 className="text-center text-white font-semibold text-2xl md:text-4xl" data-aos="fade-up">
             Featured Projects
         </h1>
