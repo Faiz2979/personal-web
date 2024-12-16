@@ -16,7 +16,7 @@ const projects = [
     {
         name: "Movie App",
         image: "movie-app.png", // Sesuaikan dengan nama file
-        href: "https://movie-discovery-git-main-muhammad-faiz-annabils-projects.vercel.app/movie",
+        href: "https://movie-discovery-git-main-muhammad-faiz-annabils-projects.vercel.app",
         stack: [
             <RiNextjsFill key="nextjs" />,
             <SiTypescript key="typescript" />,
