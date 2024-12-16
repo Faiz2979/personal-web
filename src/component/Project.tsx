@@ -20,7 +20,7 @@ const projects = [
         stack: [
             <RiNextjsFill key="nextjs" />,
             <SiTypescript key="typescript" />,
-            // <SiThemoviedatabase key="tmdb" />,
+            <SiThemoviedatabase key="tmdb" />,
         ],
     }
 ];
