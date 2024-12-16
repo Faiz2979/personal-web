@@ -1,5 +1,5 @@
 import { RiNextjsFill } from "react-icons/ri";
-import { SiTypescript } from "react-icons/si";
+import { SiThemoviedatabase, SiTypescript } from "react-icons/si";
 import Section from "../global/Wrapper";
 import { ProjectCard } from "./parts/Card";
 
