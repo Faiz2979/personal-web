@@ -22,8 +22,13 @@ import CertCard from "./parts/Card";
         {
         name: "DISCO Competition Finalist",
         image: "DISCO-Finalist.png",
-        href: "https://drive.google.com/file/d/1xCOqx_0tZSg0bS33l31FnEiB4jP372i7/view?usp=drive_link",
+        href: "https://drive.google.com/file/d/1xCOqx_0tZSg0bS33l31FnEiB4jP372i7/view?usp=drive_link"
         },
+        {
+            name: "MAGE X Game Development Finalist",
+            image: "FINALIS-MAGEX.jpg",
+            href: "https://drive.google.com/file/d/1tBi59gem4j-zG8lTMC8yElHzcVw-Pflp/view?usp=drive_link"
+        }
     ],
 
     };
@@ -71,7 +76,7 @@ import CertCard from "./parts/Card";
             }`}
         >
             {certs.lang.map((cert, index) => (
-            <CertCard key={index} {...cert} />
+            <CertCard key={cert.name} {...cert} />
             ))}
         </div>
         <div
@@ -80,7 +85,7 @@ import CertCard from "./parts/Card";
             }`}
         >
             {certs.comp.map((cert) => (
-            <CertCard key={index} {...cert} />
+            <CertCard key={cert.name} {...cert} />
             ))}
         </div>
         </Section>

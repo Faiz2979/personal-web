@@ -4,7 +4,7 @@ import { RiNextjsFill } from "react-icons/ri";
 import {
     SiExpress,
     SiMysql,
-    SiNodemon,
+    // SiNodemon,
     SiPrisma,
     SiReact,
     SiSequelize,
@@ -16,7 +16,7 @@ import Section from "../global/Wrapper";
     const skills = [
     <SiUnity key="unity" />,
     <RiNextjsFill key="nextjs" />,
-    <SiNodemon key="nodemon" />,
+    // <SiNodemon key="nodemon" />,
     <SiReact key="react" />,
     <SiTypescript key="typescript" />,
     <SiMysql key="mysql" />,
