@@ -41,22 +41,12 @@ import CertCard from "./parts/Card";
     }, []);
 
     return (
-        <Section
-        id="Certificates"
-        className="flex justify-center flex-col items-center gap-10 overflow-hidden bg-[#1f44c5]"
-        >
+        <Section id="Certificates" className="flex justify-center flex-col items-center gap-10 overflow-hidden bg-[#1f44c5]">
         <h1 className="text-center text-primary font-semibold text-2xl md:text-4xl">
             Certificates
         </h1>
         <div className="flex flex-wrap items-center justify-center gap-4">
-            <button
-            onClick={() => setIndex(0)}
-            className={`border border-spacing-10 oxanium-bold px-4 py-2 rounded-xl ${
-                index === 0
-                ? "bg-white text-[#1f44c5]"
-                : "bg-transparent  text-white]"
-            } hover:bg-[#1f44c5] hover:text-white transition-all duration-300`}
-            >
+            <button onClick={() => setIndex(0)} className={`border border-spacing-10 oxanium-bold px-4 py-2 rounded-xl ${index === 0? "bg-white text-[#1f44c5]" : "bg-transparent  text-white]"} hover:bg-[#1f44c5] hover:text-white transition-all duration-300`}>
             Competition
             </button>
             <button
