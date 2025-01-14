@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { FiArrowUpRight } from "react-icons/fi";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiThemoviedatabase, SiTypescript } from "react-icons/si";
 import Section from "../global/Wrapper";
@@ -35,6 +37,12 @@ const projects = [
             {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
             ))}
+        </div>
+        <div className="underline rounded-md flex items-center justify-center gap-2">
+        <Link className=" flex col-span-1 items-center gap-2 p-4 oxanium oxanium-semibold text-2xl" href="/projects">
+            More Projects <FiArrowUpRight className="text-2xl undeline"/>
+            </Link>
+        
         </div>
         </Section>
     );

@@ -22,7 +22,7 @@ import React, { ReactNode } from "react";
             href={props.href}
             target="_blank"
             key={props.name}
-            className="block h-[220px] w-[90%] md:w-[40%] xl:w-[30%] rounded-xl overflow-hidden relative group"
+            className="block h-[320px] w-[90%] md:w-[40%] xl:w-[30%] rounded-xl overflow-hidden relative group"
             >
             <div className="bg-black absolute w-full h-full -z-20 bg-opacity-0 duration-500 transition-all group-hover:bg-opacity-20 backdrop-blur-0 group-hover:backdrop-blur-[1px   ]"></div>
             <div className="w-full h-full block transition-all duration-300 z-[999] py-3 px-4">
@@ -73,7 +73,7 @@ import React, { ReactNode } from "react";
                         className="w-full h-full object-cover group-hover:scale-110 duration-300 transition-all z-[5] absolute left-0 top-0"
                         alt={props.name}
                         width={400}
-                        height={267} /* Tinggi dihitung sebagai 2/3 dari lebar */
+                        height={267}
                     />
                 </Link>
             );

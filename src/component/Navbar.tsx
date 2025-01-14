@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { ReactNode, useEffect, useState } from "react";
+import { AiFillCaretUp } from "react-icons/ai";
 import { FaGithub, FaInstagram, FaItchIo, FaLinkedin } from "react-icons/fa6";
 
 interface Socials {
@@ -58,7 +59,7 @@ export default function Navbar() {
         href={"/"}
         className="text-white z-10 text-4xl font-semibold leading-none inline-flex items-end gap-[2px]"
       >
-        {/* Faiz <span className="w-3 h-3 rounded-full bg-[#201cf8]"></span> */}
+        Faizz<span><AiFillCaretUp /></span>
       </Link>
       <div className="flex z-10 items-center gap-3">
         {socials.map((social) => (
