@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="flex flex-col md:flex-row items-center md:gap-48 sm:gap-32 gap-8">
         <div className="flex justify-center items-center" data-aos="flip-up">
           <Image
-            src={"/assets/sementara.jpg"}
+            src={"/assets/mccut.jpg"}
             alt="myProfilePicture"
             className="object-cover rounded-full h-[60%] sm:h-[70%] md:h-[90%] w-auto"
             data-aos="flip-up"
