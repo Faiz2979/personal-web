@@ -4,7 +4,7 @@ import React, { createContext, useContext } from "react";
 const TypewriterContext = createContext<string[]>([]);
 
 export const TypewriterProvider = ({ children }: { children: React.ReactNode }) => {
-  const strings = ["Web Developer", "Game Devel", "Game Programmer", "ℵ"];
+  const strings = ["Web Developer", "Game Developer", "Game Programmer", "ℵ"];
   return (
     <TypewriterContext.Provider value={strings}>
       {children}

@@ -65,7 +65,7 @@ export default function Hero() {
           </h2>
           <h3 className="text-3xl sm:text-3xl md:text-7xl oxanium-bold">
             A{" "}
-            <span className="text-[#e83838] inline-block w-[600px]">
+            <span className="text-[#e83838] inline-block w-[700px]">
               <Typewriter options={{ strings, autoStart: true, loop: true, wrapperClassName: "inline-block" }} />
             </span>
           </h3>
