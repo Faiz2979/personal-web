@@ -1,11 +1,11 @@
-import { projectsFeatured } from "../content/projectfeatured";
-import Section from "../global/Wrapper";
-import { ProjectCard } from "./parts/Card";
+import { projectsFeatured } from "../../content/projectfeatured";
+import Section from "../../global/Wrapper";
+import { ProjectCard } from "../parts/Card";
 const projects = projectsFeatured;
 
 export default function Projects() {
     return (
-        <Section id="projects" className="flex flex-col items-center gap-10 oxanium-regular bg-[#02050e] ">
+        <Section id="projects" className="flex flex-col items-center gap-10 oxanium-regular bg-[#0e0202] ">
             <h1 className="text-center text-white font-semibold text-2xl md:text-4xl" data-aos="fade-up">
                 Featured Projects
             </h1>

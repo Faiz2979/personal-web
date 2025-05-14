@@ -10,22 +10,22 @@ export default function Footer() {
                 {/* <Link href="/button-gallery" className="hover:outline outline-blue-500 p-2 rounded-md oxanium oxanium-bold">Button Gallery</Link> */}
             <div id="iconButton" className="flex flex-row md:flex-col lg:flex-row gap-2 md:gap-6">
                 <a
-                    className="flex items-center justify-center hover:text-blue-500"
+                    className="flex items-center justify-center hover:text-red-500"
                     href="https://github.com/faiz2979">
                     <FaGithub className="w-6 h-6 md:w-8 md:h-8" />
                 </a>
                 <a
-                    className="flex items-center justify-center hover:text-blue-500"
+                    className="flex items-center justify-center hover:text-red-500"
                     href="https://www.linkedin.com/in/faizannabil/">
                     <FaLinkedin className="w-6 h-6 md:w-8 md:h-8" />
                 </a>
                 <a
-                    className="flex items-center justify-center hover:text-blue-500"
+                    className="flex items-center justify-center hover:text-red-500"
                     href="https://flamexq.itch.io/">
                     <FaItchIo className="w-6 h-6 md:w-8 md:h-8" />
                 </a>
                 <a
-                    className="flex items-center justify-center hover:text-blue-500"
+                    className="flex items-center justify-center hover:text-red-500"
                     href="https://www.instagram.com/wisefaiz/">
                     <FaInstagram className="w-6 h-6 md:w-8 md:h-8" />
                 </a>

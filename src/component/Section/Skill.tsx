@@ -1,12 +1,12 @@
 import React from "react";
 
-import { mySkills } from "../content/skills";
-import Section from "../global/Wrapper";
+import { mySkills } from "../../content/skills";
+import Section from "../../global/Wrapper";
 const skills = mySkills;
 
 export default function Skills() {
     return (
-        <Section id="skills" className="flex flex-col items-center pt-4 gap-7 bg-[#02050e]">
+        <Section id="skills" className="flex flex-col items-center pt-4 gap-7 bg-[#0e0202]">
             <div data-aos="fade-up">
                 <h1 className="text-center text-white font-semibold text-2xl lg:text-4xl mb-5">
                     Skills

@@ -1,9 +1,9 @@
-import About from '@/component/About';
-import Certificate from '@/component/Certificate';
-import Footer from '@/component/Footer';
-import Hero from '@/component/Hero';
-import Project from '@/component/Project';
-import Skills from '@/component/Skill';
+import About from '@/component/Section/About';
+import Certificate from '@/component/Section/Certificate';
+import Footer from '@/component/Section/Footer';
+import Hero from '@/component/Section/Hero';
+import Project from '@/component/Section/Project';
+import Skills from '@/component/Section/Skill';
 import TypewriterProvider from "@/component/parts/Typewriter";
 
 export default function Home() {

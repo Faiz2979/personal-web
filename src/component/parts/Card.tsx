@@ -53,7 +53,7 @@ import React, { ReactNode } from "react";
                     href={props.href}
                     target="_blank"
                     key={props.href}
-                    className="block w-[90%] md:w-[40%] xl:w-1/3 aspect-[3/2] rounded-xl overflow-hidden relative group outline outline-blue-500"
+                    className="block w-[90%] md:w-[40%] xl:w-1/3 aspect-[3/2] rounded-xl overflow-hidden relative group outline outline-red-500"
                 >
                     <div className="bg-black absolute w-full h-full -z-20 bg-opacity-0 duration-500 transition-all group-hover:bg-opacity-30"></div>
                     <div className="w-full h-full block transition-all duration-300 z-[10] py-3 px-4">
