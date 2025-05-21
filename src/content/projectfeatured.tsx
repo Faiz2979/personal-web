@@ -15,7 +15,7 @@ const projectsFeatured = [
     {
         name: "Movie App",
         image: "movie-app.png", // Sesuaikan dengan nama file
-        href: "movie.faizannabil.me",
+        href: "https://movie.faizannabil.me",
         stack: [
             <RiNextjsFill key="nextjs" />,
             <SiTypescript key="typescript" />,
